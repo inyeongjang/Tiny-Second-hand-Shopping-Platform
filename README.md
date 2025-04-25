@@ -29,8 +29,7 @@ cd Tiny-Second-hand-Shopping-Platform
 npm install
 ```
 
-2. .env 파일이 Git에 포함되어 있으므로, 해당 파일을 수정하여 환경 변수를 설정할 필요가 없습니다.
-    이미 제공된 .env 파일을 확인한 후, 설정을 맞춰 주세요.
+2. 이미 제공된 .env 파일을 확인한 후, 설정을 맞춰 주세요.
 
 
 ## 데이터베이스 설정
