@@ -1,0 +1,49 @@
+<div class="container my-4">
+    <h2 class="mb-4 section-heading">상품 정보 수정</h2>
+    <form id="editProductForm" class="card">
+        <div class="card-body">
+            <div class="mb-4">
+                <label for="editTitle" class="form-label">제목</label>
+                <input type="text" class="form-control" id="editTitle" value="{title}" required>
+            </div>
+            <div class="mb-4">
+                <label for="editDescription" class="form-label">설명</label>
+                <textarea class="form-control" id="editDescription" rows="5" required>{description}</textarea>
+            </div>
+            <div class="mb-4">
+                <label for="editPrice" class="form-label">가격</label>
+                <input type="number" class="form-control" id="editPrice" min="0" step="1000" value="{price}" required>
+            </div>
+            <div class="mb-4">
+                <label for="editCategory" class="form-label">카테고리</label>
+                <select class="form-control" id="editCategory" required>
+                    <option value="">카테고리 선택</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="editLocation" class="form-label">위치</label>
+                <input type="text" class="form-control" id="editLocation" value="{location}">
+            </div>
+            <div class="mb-4">
+                <label for="editStatus" class="form-label">상태</label>
+                <select class="form-control" id="editStatus" required>
+                    <option value="available" {availableSelected}>판매중</option>
+                    <option value="reserved" {reservedSelected}>예약중</option>
+                    <option value="sold" {soldSelected}>판매완료</option>
+                    <option value="hidden" {hiddenSelected}>숨김</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="form-label">현재 이미지</label>
+                <div class="row" id="currentImages">{imagesHTML}</div>
+            </div>
+            <div class="mt-4 d-flex justify-content-between">
+                <div>
+                    <button type="submit" class="btn btn-primary-custom">저장하기</button>
+                    <button type="button" class="btn btn-outline-secondary ms-2" id="cancelEditBtn">취소</button>
+                </div>
+                <button type="button" class="btn btn-outline-danger" id="deleteProductBtn">상품 삭제</button>
+            </div>
+        </div>
+    </form>
+</div>

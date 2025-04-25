@@ -1,0 +1,44 @@
+<div class="container py-4">
+    <h1 class="mb-4">채팅 목록</h1>
+    
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0">대화 목록</h5>
+                </div>
+                <div class="list-group list-group-flush" id="chatsList">
+                    <!-- 채팅 목록이 여기에 동적으로 로드됨 -->
+                    <div class="text-center py-4">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-3">채팅 목록을 불러오는 중...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0" id="selectedChatTitle">채팅을 선택해주세요</h5>
+                </div>
+                <div class="card-body" id="chatMessages">
+                    <div class="text-center py-5">
+                        <i class="bi bi-chat-dots" style="font-size: 3rem; color: #ccc;"></i>
+                        <p class="mt-3">왼쪽 목록에서 채팅을 선택하세요</p>
+                    </div>
+                </div>
+                <div class="card-footer" id="chatInputContainer" style="display: none;">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="chatMessageInput" placeholder="메시지를 입력하세요...">
+                        <button class="btn btn-primary" id="sendMessageBtn">
+                            <i class="bi bi-arrow-right"></i> 전송
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

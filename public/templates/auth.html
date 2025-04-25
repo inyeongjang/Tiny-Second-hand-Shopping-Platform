@@ -1,0 +1,36 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow">
+                <div class="card-body p-5">
+                    <h2 class="text-center mb-4">{{title}}</h2>
+                    
+                    <form id="authForm">
+                        {{nameField}}
+                        {{nicknameField}}
+                        
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">이메일</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="이메일을 입력하세요" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">비밀번호</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="비밀번호를 입력하세요" required>
+                        </div>
+                        
+                        {{confirmPasswordField}}
+                        
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg">{{buttonText}}</button>
+                        </div>
+                    </form>
+                    
+                    <div class="text-center mt-4">
+                        <a href="#" onclick="{{switchAction}}">{{switchText}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

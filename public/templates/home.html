@@ -1,0 +1,57 @@
+<div class="container my-4">
+    <h2 class="mb-4 section-heading">상품 목록</h2>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <form id="searchForm" class="row g-3">
+                <div class="col-md-6">
+                    <label for="searchKeyword" class="form-label">검색어</label>
+                    <input type="text" class="form-control" id="searchKeyword" placeholder="상품명, 설명 검색">
+                </div>
+                <div class="col-md-6">
+                    <label for="searchCategory" class="form-label">카테고리</label>
+                    <select class="form-select" id="searchCategory">
+                        <option value="all" selected>전체 카테고리</option>
+                        <option value="electronics">전자제품</option>
+                        <option value="clothing">의류/패션</option>
+                        <option value="furniture">가구/인테리어</option>
+                        <option value="beauty">뷰티/미용</option>
+                        <option value="sports">스포츠/레저</option>
+                        <option value="books">도서/음반</option>
+                        <option value="others">기타</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="searchMinPrice" class="form-label">최소 가격</label>
+                    <input type="number" class="form-control" id="searchMinPrice" placeholder="최소 가격">
+                </div>
+                <div class="col-md-3">
+                    <label for="searchMaxPrice" class="form-label">최대 가격</label>
+                    <input type="number" class="form-control" id="searchMaxPrice" placeholder="최대 가격">
+                </div>
+                <div class="col-md-3">
+                    <label for="searchLocation" class="form-label">지역</label>
+                    <input type="text" class="form-control" id="searchLocation" placeholder="지역명">
+                </div>
+                <div class="col-md-3">
+                    <label for="searchSort" class="form-label">정렬</label>
+                    <select class="form-select" id="searchSort">
+                        <option value="newest" selected>최신순</option>
+                        <option value="priceAsc">가격 낮은순</option>
+                        <option value="priceDesc">가격 높은순</option>
+                    </select>
+                </div>
+                <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary-custom">검색</button>
+                    <button type="button" id="resetFiltersBtn" class="btn btn-secondary ms-2">필터 초기화</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <div id="productsContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 products-container">
+            <!-- 상품 목록이 여기에 로드됩니다 -->
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,17 @@
+<div class="col">
+    <div class="card h-100">
+      <div style="height: 150px; overflow: hidden; position: relative;">
+        <img src="{imageUrl}" class="card-img-top" alt="{title}" style="width: 100%; height: 100%; object-fit: cover;">
+        <span class="badge {statusBadgeClass} position-absolute top-0 end-0 m-2">{statusText}</span>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">{title}</h6>
+        <p class="card-text fw-bold">₩{price}</p>
+        <div class="d-flex gap-2">
+          <button class="btn btn-sm btn-primary flex-grow-1" data-id="{id}" data-action="view">상세보기</button>
+          <button class="btn btn-sm btn-outline-primary" data-id="{id}" data-action="edit">수정</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

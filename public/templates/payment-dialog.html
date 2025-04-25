@@ -1,0 +1,67 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">송금하기</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3">
+                <p><strong>상품:</strong> ${productTitle}</p>
+                <p><strong>가격:</strong> ₩${price.toLocaleString()}</p>
+            </div>
+            
+            <div class="mb-3">
+                <label for="paymentMethod" class="form-label">결제 방법</label>
+                <select class="form-select" id="paymentMethod">
+                    <option value="card">신용카드</option>
+                    <option value="bank">계좌이체</option>
+                    <option value="virtual">가상계좌</option>
+                    <option value="phone">휴대폰결제</option>
+                </select>
+            </div>
+            
+            <div id="cardPaymentInfo" class="payment-method-info">
+                <div class="mb-3">
+                    <label for="cardNumber" class="form-label">카드번호</label>
+                    <input type="text" class="form-control" id="cardNumber" placeholder="0000-0000-0000-0000">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cardExpiry" class="form-label">만료일</label>
+                        <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cardCVC" class="form-label">CVC</label>
+                        <input type="text" class="form-control" id="cardCVC" placeholder="000">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="bankPaymentInfo" class="payment-method-info" style="display: none;">
+                <div class="mb-3">
+                    <label for="bankName" class="form-label">은행</label>
+                    <select class="form-select" id="bankName">
+                        <option value="kb">국민은행</option>
+                        <option value="shinhan">신한은행</option>
+                        <option value="woori">우리은행</option>
+                        <option value="hana">하나은행</option>
+                        <option value="ibk">기업은행</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="accountNumber" class="form-label">계좌번호</label>
+                    <input type="text" class="form-control" id="accountNumber" placeholder="계좌번호 입력">
+                </div>
+            </div>
+            
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="agreeTerms">
+                <label class="form-check-label" for="agreeTerms">개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+            <button type="button" class="btn btn-success" id="confirmPayment">결제하기</button>
+        </div>
+    </div>
+</div>

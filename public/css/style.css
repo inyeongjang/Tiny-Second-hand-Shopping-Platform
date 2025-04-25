@@ -1,0 +1,331 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #343a40;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+/* Auth container */
+.auth-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile container */
+.profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    margin: 1rem 0;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.btn-change-image {
+    background: #f0f0f0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.btn-change-image:hover {
+    background: #e0e0e0;
+}
+
+.profile-sections {
+    display: grid;
+    gap: 2rem;
+}
+
+.profile-section {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.profile-section h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.profile-form,
+.password-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-primary i {
+    color: white;
+}
+
+/* Products container */
+.products-container {
+    margin: 2rem auto;
+}
+
+.card {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .product-price {
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.product-img-container {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-img-container img {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img-container img {
+    transform: scale(1.05);
+}
+
+/* Admin container */
+.admin-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    margin-top: 1rem;
+}
+
+/* Forms */
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    margin-right: 0.5rem;
+}
+
+/* 판매자 프로필 링크 스타일 */
+.seller-link {
+    color: #3483eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.seller-link:hover {
+    color: #1665d0;
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .auth-container,
+    .profile-container,
+    .admin-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+.nav-tabs {
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Category and status badges */
+.badge {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+}
+
+.badge i {
+    margin-right: 0.25rem;
+}
+
+/* Seller info styles */
+.seller-info {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.seller-info:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.seller-profile img {
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.seller-details h5 {
+    font-weight: 600;
+    color: #333;
+}
+
+.seller-description {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Report button */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.8rem 1rem;
+} 
