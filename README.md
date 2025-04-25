@@ -29,29 +29,9 @@ cd Tiny-Second-hand-Shopping-Platform
 npm install
 ```
 
-2. 환경 변수 파일을 생성합니다:
+2. .env 파일이 Git에 포함되어 있으므로, 해당 파일을 수정하여 환경 변수를 설정할 필요가 없습니다.
+이미 제공된 .env 파일을 확인한 후, 설정을 맞춰 주세요.
 
-```bash
-# .env 파일 생성
-cp .env.example .env
-```
-
-3. 생성된 `.env` 파일을 텍스트 에디터로 열고 다음 변수들을 설정합니다:
-
-```
-# 서버 설정
-PORT=3000
-
-# 데이터베이스 설정
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=your_password
-DB_NAME=second_hand_db
-
-# JWT 설정
-JWT_SECRET=your_jwt_secret_key
-JWT_EXPIRES_IN=1d
-```
 
 ## 데이터베이스 설정
 
